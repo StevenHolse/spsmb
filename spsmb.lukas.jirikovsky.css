@@ -1,0 +1,558 @@
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color:lightgray;
+    margin:0;
+    width:100%;
+}
+.hlavni{
+
+}
+.obsah{
+
+}
+.nadpis{
+    width:100%;
+    background-color: lightsteelblue;
+    display:flex;
+    flex-direction: row-reverse;
+    position:fixed;
+    z-index:1;
+}
+.nadpis p{
+    font-size:x-large;
+    margin:0;
+    margin-left:10px;
+
+}
+.nadpis a{
+    font-size:x-large;
+    margin:0;
+    padding:16px;
+    color:black;
+    text-decoration:none; 
+    display:flex;
+}
+.platno{
+    background:url("Foto_skoly/skola.jpg") center;
+    background-size: cover;
+    width:100%;
+    height:750px;   
+}
+.platnotext{
+    margin:0;
+    background-color:rgba(0,0,0,0.5);
+    height:100%;
+    text-align: left;
+    font-size:40px;
+    color:white;
+}
+.platnotext p{
+    margin:0;
+    position: absolute;
+    top:35%;
+    left:10%;
+}
+.text{
+    width:100%;
+    display:flex;
+    margin-top:5px;
+}
+.textodkazy{
+    width:20%;
+    position:sticky;
+    top:65px;
+    display:flex;
+    flex-direction: column;
+    place-self:flex-start;
+}
+.textodkazymenu{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    margin-left:15%;
+    background-color:#B5B5B5;
+}
+.textodkazymenu1 li{
+    list-style-type: none;
+    width:90%;
+    transition: width 0.5s ,margin-left 0.5s,background-color 0.2s ;
+    background-color:#B5B5B5;
+    text-align: center;
+    margin-left:5%;
+}
+.textodkazymenu1 li:hover{
+    background-color: lightsteelblue;
+    width:92%;
+    margin-left:4%;
+
+}
+.textodkazymenu1 ul{
+    padding-left:0;
+
+}
+.textodkazymenu1{
+    display:none;
+}
+.textodkazymenu:hover .textodkazymenu1{
+    display:block;
+}
+.textodkazymenu1 ul{
+    margin:0;
+    padding:0;
+}
+.textodkazymenu > a{
+    font-size:x-large;
+    text-align:center;
+    padding:10px;
+    margin:0;
+    width:90%;
+    margin-left:5%;
+    color:black;
+    text-decoration: none;
+    background-color:#B5B5B5;
+    transition: width 0.5s ,margin-left 0.5s;
+    margin-top:10px;
+
+
+}
+
+.textodkazymenu a:hover{
+    width:95%;
+    margin-left:2.5%;
+
+}
+.textodkazymenu1 a{
+    transition:none;
+    color:#202020;
+    text-decoration: none;
+    transition: background-color 0.2s , padding-left 0.2s;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+}
+.textodkazymenu1 a:hover{
+    background-color: lightsteelblue;
+    padding-left:2px
+}
+.text1{
+    width:60%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+;
+    border-left:1px solid rgba(0,0,0,0.35);
+    border-right:1px solid rgba(0,0,0,0.35);
+
+}
+.text1 h1{
+    margin-top:10px;
+    margin-bottom:0;
+    text-align:center;
+    opacity:0.9;
+}
+.text1aktuality1{
+    width:65%;
+    margin-left:17.5%;
+    border:1px solid rgba(0,0,0,0.2);
+    padding:24px;
+    background-color:#f4f4f4;
+    border-radius: 1em 1em;
+    box-shadow: 0.01em 0.01em 0.06em;
+    margin-top:32px;
+}
+.text1aktuality1 p{
+    font-size:15px;
+    line-height: 22px;
+}
+.text1aktuality1 li{
+    font-size:15px;
+    line-height: 22px;
+}
+.text1aktuality1 a:hover{
+    border-bottom: 1px solid darkblue;
+}
+.text1aktuality1 th{
+    text-align:left;
+}
+.text1aktuality1 td{
+    font-size: 14px;
+}
+.text1aktuality1 tr:hover{
+    background-color: rgba(0,0,0,0.03)
+}
+.text1aktuality1 td, th{
+    line-height: 32px;
+}
+.text1aktuality1 td > a{
+    color:darkblue;
+    text-decoration: none;
+    
+}
+.text1aktuality1 td > a:hover{
+    border-bottom: 1px solid darkblue;
+}
+.text1aktuality1 tr:nth-child(odd){
+    background-color: rgba(0,0,0,0.02);
+    
+}
+.text1aktuality1 tr:nth-child(odd):hover{
+    background-color: rgba(0,0,0,0.04);
+}
+.tabulka_a{
+    text-align: right;
+    color:darkblue;
+    text-decoration: none;
+    line-height: 22px;  
+    font-weight: bold;
+}
+.tabulka_a > a{
+    text-decoration: none;
+    color:darkblue;
+    max-width: 20%;
+}
+.tabulka_a > a:hover{
+    border-bottom: 1px solid darkblue;
+}
+.obory{
+    display:flex;
+    padding:10px;
+    margin-top:5%;
+    text-align:center;
+    line-height: 24px;
+    background-color: rgb(176, 196, 222);
+    margin-left:-10px;
+    margin-right:-10px;
+    border-bottom:1px solid rgba(0,0,0,0.35);
+    padding-bottom:12px;
+}
+.obory h2{
+    margin-top:10px;
+}
+.obor1{
+    background-color:lightsteelblue;
+    width:30%;
+    margin-left:1.66%;
+    padding:10px;
+
+}
+.obor2{
+    background-color:lightsteelblue;
+    width:30%;
+    margin-left:3.33%;
+    padding:10px;
+
+
+}
+.obor3{
+    background-color:lightsteelblue;
+    width:30%;
+    margin-left:3.33%;
+    padding:10px;
+
+}
+.obory a{
+    text-decoration: none;
+    color:darkblue;
+}
+.obory a:hover{
+    border-bottom: 1px solid darkblue;
+}
+.fotogalerie{
+    background-color: lightsteelblue;
+    margin-left:-10px;
+    margin-right:-10px;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+}
+.fotogalerie h2{
+    text-align:center;
+}
+.fotogaleriefotky{
+    margin-top:5%;
+
+}
+.fotogaleriefotky img{
+    width:19%;
+    border:8px solid lightsteelblue;
+    border-radius: 1em 1em;
+
+}
+.fotogalerieodkaz{
+    justify-content: flex-end;
+    display:flex;
+}
+.fotogalerieodkaz a{
+    text-decoration: none;
+    color:darkblue;
+    transition: opacity 0.2s;
+}
+.fotogalerieodkaz a:hover{
+    border-bottom: 1px solid darkblue;
+
+}
+.fotoimg{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    border-top:1px solid rgba(0,0,0,0.35);
+    padding-top:12px;
+}
+.fotoimg img{
+    width:100%;
+    border-radius: 0.75em 0.75em;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+.mapa{
+    margin-left:-10px;
+    margin-right:-10px;
+    background-color: lightsteelblue;
+    padding-bottom:-1px;
+}
+.mapa h2{
+    text-align: center;
+}
+.textuzitecneodkazy{
+    width:20%;
+    margin-top:16px;
+    display:flex;
+    flex-direction: column;
+}
+.textuzitecneodkazymenu{
+    margin-right:20px;
+
+}
+.textuzitecneodkazymenu ul{
+
+}
+
+.textuzitecneodkazymenu li{
+    list-style-type: none;
+    margin-top:10px;
+}
+.textuzitecneodkazymenu a{
+    text-decoration: none;
+    color:darkblue;
+    transition: opacity 0.2s, padding-left 0.2s;
+    width:100%;
+}
+
+.textuzitecneodkazymenu a:hover{
+    border-bottom:1px solid darkblue;
+}
+.textuzitecneodkazyfacebook{
+    margin-right:20px;
+
+}
+.textuzitecneodkazyfacebook a{
+    border:1px solid rgba(0,0,0,0.2);
+    background-color:#EDEDED;
+    padding:10px;
+    margin:0;
+    margin-left:10%;
+    border-radius:0.5em 0.5em;
+    text-decoration: none;
+    color:darkblue;
+    transition: background-color 0.2s;
+}
+.textuzitecneodkazyfacebook a:hover{
+    background-color:#E0E0E0;
+
+}
+.textuzitecneodkazyerasmus{
+    margin-right:20px;
+
+
+}
+.pododkaz{
+    margin-left:10%;
+    text-decoration: none;
+    color:darkblue;
+    transition: opacity 0.2s, padding-left 0.2s;
+}
+.pododkaz:hover{
+    border-bottom:1px solid darkblue;
+}
+.textuzitecneodkazyzrizovatelskoly{
+    margin-right:20px;
+}
+.textuzitecneodkazyzrizovatelskoly p{
+    margin-left:10%;
+    line-height: 24px;
+}
+.textuzitecneodkazyobrazky{
+    margin-left:10%;
+}
+.hornimenu{
+    width:20%;
+    position:fixed;
+}
+.hornimenu1{
+    display:flex;
+    flex-direction: column;
+    width:65%;
+    background-color:#B5B5B5;
+    height:auto;
+}
+.hornimenu1-1 li{
+    list-style-type: none;
+    width:90%;
+    transition: width 0.5s ,margin-left 0.5s,background-color 0.2s ;
+    background-color:#B5B5B5;
+    text-align: center;
+    margin-left:5%;
+}
+.hornimenu1-1 li:hover{
+    background-color: lightsteelblue;
+    width:92%;
+    margin-left:4%;
+
+}
+.hornimenu1-1 ul{
+    padding-left:0;
+
+}
+.hornimenu1-1{
+    display:none;
+}
+.hornimenu1:hover .hornimenu1-1{
+    display:block;
+}
+.hornimenu1-1 ul{
+    margin:0;
+    padding:0;
+}
+.hornimenu1 > a{
+    font-size: large;
+    text-align:center;
+    padding:10px;
+    margin:0;
+    width:90%;
+    margin-left:5%;
+    color:black;
+    text-decoration: none;
+    background-color:#B5B5B5;
+    transition: width 0.5s ,margin-left 0.5s;
+    margin-top:10px;
+
+
+}
+
+.hornimenu1 a:hover{
+    width:95%;
+    margin-left:2.5%;
+
+}
+.hornimenu1-1 a{
+    transition:none;
+    color:#202020;
+    text-decoration: none;
+    transition: background-color 0.2s , width 0.2s;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+    font-size:medium;
+}
+.hornimenu1-1 a:hover{
+    background-color: lightsteelblue;
+    margin-left:0;
+    width:100.75%;
+}
+@media (max-width:1440px){
+    .textuzitecneodkazy{
+        width:0;
+        display:none;
+    }
+    .textodkazy{
+        width:30%;
+
+    }
+    .text1{
+        width:70%;
+    }
+    .text{
+        display:flex;
+    }
+    .textodkazymenu{
+        margin-left:15.5%;
+    }
+    .text1aktuality1{
+        margin-left:15%;
+        width:70%;
+    }   
+}
+@media (max-width:980px){
+    .text1aktuality1{
+        width:85%;
+        margin-left:7.5%;
+    }
+    .textodkazy{
+        width:40%;
+    }
+    .textodkazymenu{
+        margin-left:11.5%;
+    }
+    .obory{
+        flex-direction: column;
+    }
+    .obor1{
+        width:100%;
+    }
+    .obor2{
+        width:100%;
+
+    }
+    .obor3{
+        width:100%;
+    }
+    @media (max-width:785px){
+        .textodkazy{
+            display:none;
+        }
+        .text1{
+            border:none;
+            width:100%;
+            margin-left:auto;
+        }
+        .text1aktuality1{
+            width:82%;
+            margin-left:9%;
+        }
+    }
+    @media (max-width:520px){
+        .text1{
+            width:100%;
+            margin-left:0;
+            margin-right:0;
+        }
+        .text1aktuality1{
+            width:100%;
+            margin-left:auto;
+        }
+        .nadpis a{
+            font-size:large;
+        }
+        .nadpis p{
+            font-size:large;
+        }
+        .obory{
+            flex-direction: column;
+        }
+        .obor1{
+            width:100%;
+
+        }
+        .obor2{
+            width:100%;
+
+        }
+        .obor3{
+            width:100%;
+        }
+    }
