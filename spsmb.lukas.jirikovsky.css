@@ -529,6 +529,12 @@ body{
     .obor3{
         width:100%;
     }
+        .text1aktuality1 th{
+            font-size:15px;
+        }
+        .text1aktuality1 td{
+            font-size:13px;
+        }
     @media (max-width:785px){
         .textodkazy{
             display:none;
