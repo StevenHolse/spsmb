@@ -305,16 +305,6 @@ body{
 .fotogalerie h2{
     text-align:center;
 }
-.fotogaleriefotky{
-    margin-top:5%;
-
-}
-.fotogaleriefotky img{
-    width:19%;
-    border:8px solid lightsteelblue;
-    border-radius: 1em 1em;
-
-}
 .fotogalerieodkaz{
     justify-content: flex-end;
     display:flex;
