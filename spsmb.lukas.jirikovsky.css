@@ -586,6 +586,9 @@ body{
         .platnotext p{
             display:none;
         }
+        .platno{
+            height:700px;
+        }
     }
     @media (max-width:520px){
         .text1{
